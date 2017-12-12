@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Jugando...</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+        <link rel='shortcut icon' type='image/x-icon' href='img/favicon.png'/>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary container">
+            <div class="row w-100">
+                <div class="col-2"><a class="navbar-brand ml-2 mr-2" href="/">Loading</a></div>
+                <div class="col-1"><a class="text-danger" href="/sessions"><button type="button" class="btn btn-info">Salir</button></a></div>
+                <div class="col-7">
+                    <div class="alert alert-info mb-0 mt-1 ml-5 pb-1 pt-1" role="alert" id="message">Esperando mas jugadores</div>
+                </div>
+                <div class="col-2"><button type="button" id="restart" class="btn btn-warning mr-1 mb-0 mt-0" disabled="true">Rejugar</button></div>
+            </div>
+        </nav>
+
+        <template id="playerTemplate">
+            <div class="player container text-center border border-info rounded bg-secondary mt-4 mb-2 p-1">
+                <div class="row">
+                    <div class="col-sm"><h4>Puntuacion: <span id="score"></span></h4></div>
+                    <div class="col-sm"><h4>Vida: <span id="life"></span></h4></div>
+                </div>
+                <div class="row">
+                    <div class="col-6"><h3>Numero: <span id="number"></span></h3></div>
+                    <div class="col-4"><h3 id="num"></h3></div>
+                </div>
+                <canvas class="game  mb-2" width="400" height="80"></canvas>
+            </div>
+        </template>
+
+        <script src="js/gameManager.js"></script>
+        <script src="js/connectionManager.js"></script>
+        <script src="js/events.js"></script>
+        <script src="js/player.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
