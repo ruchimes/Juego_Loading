@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Sesiones</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+        <link rel="stylesheet" href="css/styles.css" media="screen">
+        <link rel='shortcut icon' type='image/x-icon' href='img/favicon.png'/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary container">
+            <div class="row w-100">
+                 <div class="col-2"><a class="navbar-brand ml-2 mr-2" href="/">Loading</a></div>
+                 <div class="col-1"><a class="text-danger" href="/"><button type="button" class="btn btn-info">Atras</button></a></div>
+                 <div class="col-8"><div class="alert alert-danger invisible mb-0 mt-1 ml-5 pb-1 pt-1" role="alert" id="message"></div></div>
+            </div>
+        </nav>
+
+        <div class="container text-center">
+
+            <h1  class="mt-5 mb-4">Sesiones disponibles</h1>
+            <div class="progress mt-2 mb-4">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+            </div>
+
+            <div class="container rounded bg-light mt-4 mb-6 p-4">
+
+                <div class="bg-secondary mt-2 mb-2 p-1">
+                  <div class="row">
+                    <div class="col-sm"><h2>Nombre</h2></div>
+                    <div class="col-sm"><h2>Jugadores</h2></div>
+                  </div>
+                </div>
+
+                <div class="container rounded bg-light mt-4 mb-6" id="sessions">
+                </div>
+            </div>
+
+            <div class="progress mt-4 mb-3">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            </div>
+
+            <a href="new"><button type="button" class="btn btn-primary btn-lg  mx-auto">Nueva Sesión</button></a>
+            
+        </div>
+
+        <template id="sessionTemplate">
+            <div class="container rounded bg-secondary mt-2 mb-2 p-1">
+                <a id="session" class="" href="">
+                  <div class="row">
+                    <div class="col-sm"><h2 id="name"></h2></div>
+                    <div class="col-sm"><h2 id="players"></h2></div>
+                  </div>
+                </a>  
+            </div>
+        </template>
+
+        <script src="js/connectionManager.js"></script>
+        <script src="js/sessions.js"></script>
+    </body>
+</html>

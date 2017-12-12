@@ -1,0 +1,15 @@
+{
+  "name": "Loading game",
+  "version": "1.0.0",
+  "description": "Juego multijugador",
+  "main": "./server/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rubén González Fernández",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "ws": "^3.3.2"
+  }
+}
