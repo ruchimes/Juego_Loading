@@ -5,23 +5,23 @@ let path = require('path');
 
 
 app.get('/', function (req, res) {
-   res.sendFile(path.join(__dirname + '/../index.html'));
+   res.sendFile(path.join(__dirname + '/../libs/html/index.html'));
 });
 
 app.get('/howto', function (req, res) {
-   res.sendFile(path.join(__dirname + '/../howto.html'));
+   res.sendFile(path.join(__dirname + '/../libs/html/howto.html'));
 });
 
 app.get('/sessions', function (req, res) {
-   res.sendFile(path.join(__dirname + '/../session.html'));
+   res.sendFile(path.join(__dirname + '/../libs/html/session.html'));
 });
 
 app.get('/game', function (req, res) {
-   res.sendFile(path.join(__dirname + '/../game.html'));
+   res.sendFile(path.join(__dirname + '/../libs/html/game.html'));
 });
 
 app.get('/new', function (req, res) {
-   res.sendFile(path.join(__dirname + '/../new.html'));
+   res.sendFile(path.join(__dirname + '/../libs/html/new.html'));
 });
 
 app.listen(5000, function () {
